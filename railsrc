@@ -1,7 +1,0 @@
-ActiveRecord::Base.logger = Logger.new(STDOUT)
-ActiveRecord::Base.clear_active_connections!
-
-# TODO: Rewrite with notifications support, a la
-# ActiveSupport::Notifications.subscribe do |name, start, finish, id, payload|
-#   puts (["notification:", name, start, finish, id, payload].join(" "))
-# end
