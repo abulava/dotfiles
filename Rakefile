@@ -1,7 +1,8 @@
 require 'rubygems'
 require 'rake'
 
-desc "Install the dotfiles as symlinks in $HOME directory"
+desc "Install the dotfiles as symlinks in $HOME directory
+  Prompt answers: [y]es, [n]o, [a]ll, [q]uit"
 task :install => 'dotfiles:install'
 task :default => 'dotfiles:install'
 
