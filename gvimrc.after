@@ -1,0 +1,4 @@
+color railscasts
+set guifont=Monaco:h13
+
+set wildignore-=*/vendor/gems/*
