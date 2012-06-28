@@ -1,5 +1,11 @@
 #!/bin/sh
 
+echo "  → Installing Homebrew..."
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
+brew update
+
+echo "✓ Homebrew installed"
+
 echo "  → Installing essential RBEnv and Ruby-Build..."
 brew install rbenv
 brew install ruby-build
