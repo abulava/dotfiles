@@ -22,7 +22,8 @@ echo "✓ Rubygems installed"
 
 echo "  → Installing utilities..."
 brew install mc
-brew install git bash-completion
+brew install bash-completion
+brew install git
 brew install ack
 
 echo "✓ Utilities installed"
