@@ -11,7 +11,7 @@ namespace :dotfiles do
     replace_all = false
     Dir['*'].each do |file|
       next if %w[Rakefile README.markdown mac].include? file
-    
+
       if File.exist?(File.join(ENV['HOME'], ".#{file}"))
         if replace_all
           replace_file(file)
@@ -32,11 +32,6 @@ namespace :dotfiles do
       else
         link_file(file)
       end
-    end
-    print "Reload ~/.profile? [yn] "
-    if $stdin.gets.chomp == 'y'
-      system ". $HOME/.profile"
-      system "exec $SHELL"
     end
   end
 end
