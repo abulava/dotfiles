@@ -2,7 +2,7 @@ export ARCHFLAGS="-arch x86_64"
 # ~/.profile: executed by the command interpreter for login shells.
 # This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login exists.
 
-export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/.rbenv/shims:/usr/local/bin:$PATH"
 export BUNDLER_EDITOR=mvim
 
 # don't put duplicate lines in the history. See bash(1) for more options
