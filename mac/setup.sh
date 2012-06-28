@@ -16,6 +16,10 @@ echo "✓ RBEnv installed"
 echo "  → Installing Ruby"
 rbenv install 1.8.7-p352
 rbenv install 1.9.2-p290
+
+# ruby 1.9.3-p125-perf
+curl https://raw.github.com/gist/1688857/rbenv.sh | sh
+
 rbenv global 1.8.7-p352
 
 echo "✓ Installed Ruby: $(rbenv global)"
