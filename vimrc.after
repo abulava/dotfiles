@@ -1,1 +1,11 @@
 map <leader>r :NERDTreeFind<cr>
+
+" override tab settings on a per-directory basis
+function! SetStandardTabs()
+  set noexpandtab
+endfunction
+
+augroup PerDirectoryTabs
+  autocmd!
+  autocmd BufRead,BufEnter,BufNewFile /Users/abulava/projects/not_janus_defaults/* call SetStandardTabs()
+augroup END
